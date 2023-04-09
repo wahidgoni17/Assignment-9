@@ -1,0 +1,25 @@
+{
+    "category": [
+      {
+        "logo": "https://example.com/images/category1.png",
+        "name": "Cybersecurity Analyst",
+        "jobs_available": 125
+      },
+      {
+        "logo": "https://example.com/images/category2.png",
+        "name": "Database Administrator",
+        "jobs_available": 76
+      },
+      {
+        "logo": "https://example.com/images/category3.png",
+        "name": "Project Manager",
+        "jobs_available": 234
+      },
+      {
+        "logo": "https://example.com/images/category4.png",
+        "name": "Business Analyst",
+        "jobs_available": 43
+      }
+    ]
+  }
+  
