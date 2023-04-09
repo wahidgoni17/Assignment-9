@@ -3,7 +3,7 @@
     "id": "001",
     "company_logo": "https://s3.amazonaws.com/cdn.designcrowd.com/blog/100-Famous-Brand%20Logos-From-The-Most-Valuable-Companies-of-2020/apple-logo.png",
     "job_title": "Software Engineer",
-    "company_name": "ABC Inc.",
+    "company_name": "Apple",
     "remote_or_onsite": "Remote",
     "location": "San Francisco, CA",
     "fulltime_or_parttime": "Full-time",
@@ -21,7 +21,7 @@
     "id": "002",
     "company_logo": "https://s3.amazonaws.com/cdn.designcrowd.com/blog/100-Famous-Brand%20Logos-From-The-Most-Valuable-Companies-of-2020/google-logo.png",
     "job_title": "Marketing Manager",
-    "company_name": "XYZ Corp.",
+    "company_name": "Google",
     "remote_or_onsite": "Onsite",
     "location": "New York, NY",
     "fulltime_or_parttime": "Full-time",
@@ -38,13 +38,13 @@
   {
     "id": "003",
     "company_logo": "https://s3.amazonaws.com/cdn.designcrowd.com/blog/100-Famous-Brand%20Logos-From-The-Most-Valuable-Companies-of-2020/microsoft-logo.png",
-    "job_title": "Data Analyst",
-    "company_name": "123 Co.",
+    "job_title": "Database Administrator",
+    "company_name": "Microsoft",
     "remote_or_onsite": "Remote",
     "location": "Chicago, IL",
     "fulltime_or_parttime": "Full-time",
     "salary": "$60,000 - $80,000 per year",
-    "job_description": "We're looking for a data analyst to help us extract insights from our data and drive business decisions.",
+    "job_description": "We're looking for a Database Administrator to help us extract insights from our data and drive business decisions.",
     "job_responsibility": "- Collect and analyze data using SQL and Excel\n- Create and maintain dashboards to track KPIs\n- Identify trends and provide insights",
     "educational_requirements": "Bachelor's or higher in Statistics, Mathematics, Computer Science or a related field",
     "experiences": "2+ years of experience in data analysis",
@@ -54,10 +54,10 @@
     }
   },
   {
-    "id": 4,
+    "id": "004",
     "company_logo": "https://s3.amazonaws.com/cdn.designcrowd.com/blog/100-Famous-Brand%20Logos-From-The-Most-Valuable-Companies-of-2020/amazon-logo.png",
     "job_title": "Data Analyst",
-    "company_name": "Data Co.",
+    "company_name": "Amazon",
     "remote_or_onsite": "Onsite",
     "location": "San Francisco, CA",
     "fulltime_or_parttime": "Full-time",
@@ -72,7 +72,7 @@
     }
   },
   {
-    "id": 5,
+    "id": "005",
     "company_logo": "https://s3.amazonaws.com/cdn.designcrowd.com/blog/100-Famous-Brand%20Logos-From-The-Most-Valuable-Companies-of-2020/facebook-logo.png",
     "job_title": "Sales Representative",
     "company_name": "Sales Corp",
@@ -90,7 +90,7 @@
     }
   },
   {
-    "id": 6,
+    "id": "006",
     "company_logo": "https://s3.amazonaws.com/cdn.designcrowd.com/blog/100-Famous-Brand%20Logos-From-The-Most-Valuable-Companies-of-2020/Adidas.png",
     "job_title": "Human Resources Manager",
     "company_name": "HR Inc.",
