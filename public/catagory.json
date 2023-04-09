@@ -1,20 +1,24 @@
 [
   {
+    "id": 1,
     "logo": "https://cdn.vectorstock.com/i/1000x1000/93/28/information-security-analyst-outline-icon-vector-28259328.webp",
     "name": "Cybersecurity Analyst",
     "jobs_available": 125
   },
   {
+    "id": 2,
     "logo": "https://cdn.vectorstock.com/i/1000x1000/81/54/database-manager-vector-45998154.webp",
     "name": "Database Administrator",
     "jobs_available": 76
   },
   {
+    "id": 3,
     "logo": "https://cdn.vectorstock.com/i/1000x1000/82/03/project-manager-outline-icon-style-illu-vector-46578203.webp",
     "name": "Project Manager",
     "jobs_available": 234
   },
   {
+    "id": 4,
     "logo": "https://cdn.vectorstock.com/i/1000x1000/75/35/analyst-vector-40747535.webp",
     "name": "Business Analyst",
     "jobs_available": 43

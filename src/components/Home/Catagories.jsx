@@ -15,9 +15,9 @@ const Catagories = () => {
                 <h3 className='text-4xl font-bold py-2'>Job Catagory List</h3>
                 <p className='text-slate-600'>Get Hired Faster, Personalized Job Matches Based on Your Preferences</p>
             </div>
-            <div>
+            <div className='flex justify-between px-20 py-10'>
                 {
-                    catagories.map(catagory => <Catagory ></Catagory>)
+                    catagories.map(catagory => <Catagory key={catagory.id} catagory={catagory}></Catagory>)
                 }
             </div>
         </div>
