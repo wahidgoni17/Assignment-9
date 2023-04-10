@@ -31,7 +31,11 @@ const router = createBrowserRouter([
         loader: async() => await fetch('assignment.json')
       },
       {
-        path:"/applied",
+        path: '/applied',
+        element: <Applied/>
+      },
+      {
+        path:"applied/:id",
         element: <Applied/>
       },
       {

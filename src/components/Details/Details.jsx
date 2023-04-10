@@ -1,17 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import info from "../../../public/data.json";
 const Details = () => {
   const { id } = useParams();
   const details = info.find((inf) => inf.id === id);
-  console.log(details);
   const {
     company_logo,
     job_title,
     company_name,
-    remote_or_onsite,
     location,
-    fulltime_or_parttime,
     salary,
     job_description,
     job_responsibility,
@@ -19,10 +16,17 @@ const Details = () => {
     experiences,
     contact_information,
   } = details;
+  const navigate = useNavigate()
+  const handleApply = () =>{
+    navigate(`/applied/${id}`)
+  }
   return (
     <div>
       <div className="py-10 bg-emerald-50">
-        <h1 className="text-4xl text-center font-bold">Job Details</h1>
+        <h1 className="text-5xl text-center font-bold">Job Details</h1>
+      </div>
+      <div className="my-5">
+        <h1 className="text-4xl text-center font-bold">{company_name}</h1>
       </div>
       <div className="flex flex-col lg:flex-row justify-between items-start gap-9 py-10 px-20">
         <div>
@@ -66,7 +70,7 @@ const Details = () => {
                 </div>
             </div>
             <div>
-                <button className="btn btn-primary w-96 my-4">Apply Now</button>
+                <button onClick={handleApply} className="btn btn-primary w-96 my-4">Apply Now</button>
             </div>
         </div>
       </div>
