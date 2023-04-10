@@ -1,9 +1,16 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, faDollarSign } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 
 const Feature = ({ feature }) => {
+  const navigate = useNavigate();
+  const handleDetails = () =>{
+    navigate(`/details/${id}`)
+  }
+
   const {
+    id,
     company_logo,
     job_title,
     company_name,
@@ -36,7 +43,7 @@ const Feature = ({ feature }) => {
             Salary: {salary}
           </p>
         </div>
-        <button className="btn btn-primary mt-4">View Details</button>
+        <button onClick={handleDetails} className="btn btn-primary mt-4">View Details</button>
       </div>
     </div>
   );

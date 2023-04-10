@@ -13,6 +13,7 @@ import Applied from './components/Applied/Applied';
 import Blogs from './components/Blogs/Blogs';
 import ErrorElement from './components/ErrorElement/ErrorElement';
 import Error from './components/ErrorElement/Error';
+import Details from './components/Details/Details';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path:'/blog',
         element: <Blogs/>
+      },
+      {
+        path:'details/:id',
+        element: <Details/>
       },
       {
         path:'*',
