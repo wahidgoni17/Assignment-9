@@ -26,7 +26,8 @@ const router = createBrowserRouter([
       },
       {
         path:"/statistics",
-        element: <Statistics/>
+        element: <Statistics/>,
+        loader: async() => await fetch('assignment.json')
       },
       {
         path:"/applied",

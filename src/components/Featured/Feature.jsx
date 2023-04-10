@@ -12,7 +12,6 @@ const Feature = ({ feature }) => {
     fulltime_or_parttime,
     salary,
   } = feature;
-  console.log(feature);
   return (
     <div className="shadow-xl py-12 px-auto">
       <img className="w-40 h-32 mx-auto my-4" src={company_logo} alt="" />
