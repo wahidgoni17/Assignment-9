@@ -18,4 +18,4 @@
 - feature 7
   - applied jobs are showed in applied jobs section
 
-live link = https://friendly-gingersnap-e223da.netlify.app/details/004
+live link = https://friendly-gingersnap-e223da.netlify.app/applied
