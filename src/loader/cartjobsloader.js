@@ -5,8 +5,6 @@ const cartJobsLoader = async() =>{
     const jobs = await loadedJobs.json()
     console.log(jobs)
 
-    // get data from local storage
-
     const storedcart = getShoppingCart()
     const savedcart = []
     console.log(storedcart)
@@ -18,11 +16,6 @@ const cartJobsLoader = async() =>{
             savedcart.push(addedJob)
         }
     }
-    // if need to return two things
-    // return [products, storedcart]
-    // another option
-    // return{products,  cart: savedcart}
-
     return savedcart
 }
 
