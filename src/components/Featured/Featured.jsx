@@ -6,7 +6,7 @@ const Featured = () => {
   const [showAll, setShowAll] = useState(false);
 
   useEffect(() => {
-    fetch("data.json")
+    fetch("/public/data.json")
       .then((res) => res.json())
       .then((data) => {
         if (showAll) {
