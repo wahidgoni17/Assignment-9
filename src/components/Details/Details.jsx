@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import info from "../../../public/data.json";
+import { addToDb, getShoppingCart } from "../../utilities/fakedb";
 const Details = () => {
   const { id } = useParams();
   const details = info.find((inf) => inf.id === id);
@@ -16,10 +17,38 @@ const Details = () => {
     experiences,
     contact_information,
   } = details;
-  const navigate = useNavigate()
-  const handleApply = () =>{
-    navigate(`/applied/${id}`)
-  }
+  const [cart, setCart] = useState([])
+  useEffect(() => {
+    const storedCart = getShoppingCart()
+    const savedCart = []
+    for(const id in storedCart){
+      const addedJobs = info.find((job => job.id === id))
+      if(addedJobs){
+        const quantity = storedCart[id]
+        addedJobs.quantity = quantity
+        savedCart.push(addedJobs)
+      }
+    }
+    setCart(savedCart)
+  }, [details])
+
+  const handleAddtocart = (job) => {
+    let newCart = []
+    let exists = cart.find(job => job.id === job.id)
+    if(!exists){
+      job.quantity = 1
+      newCart = [...cart, job]
+    }
+    else{
+      exists = exists.quantity + 1
+      const remaining = cart.filter(job =>job.id !== job.id)
+      newCart = [...remaining, exists]
+    }
+    setCart(newCart);
+    addToDb(job.id);
+  };
+
+
   return (
     <div>
       <div className="py-10 bg-emerald-50">
@@ -70,7 +99,7 @@ const Details = () => {
                 </div>
             </div>
             <div>
-                <button onClick={handleApply} className="btn btn-primary w-96 my-4">Apply Now</button>
+                <button onClick={()=> handleAddtocart(details)} className="btn btn-primary w-96 my-4">Apply Now</button>
             </div>
         </div>
       </div>
