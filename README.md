@@ -7,3 +7,15 @@
 - feature 2
   - some job catagory list added in the project
 - feature 3
+  - fetured jobs shown in the grid layout
+  - on clicking the details button it show the job detail
+- feature 4
+  - statistics section has the chart of mine past assignment result
+- feature 5
+  - blogs section has some question and answer
+- feature 6
+  - jobs are stored in local storage
+- feature 7
+  - applied jobs are showed in applied jobs section
+
+live link = https://friendly-gingersnap-e223da.netlify.app/details/004

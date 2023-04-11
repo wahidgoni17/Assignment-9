@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import Job from "./Job";
-
+// when enter this page please reload the page to see the jobs
 const Applied = () => {
   const savedCart = useLoaderData();
   return (
@@ -9,7 +9,7 @@ const Applied = () => {
       <div className="py-10 bg-emerald-50">
         <h1 className="text-4xl font-bold text-center">Applied Jobs</h1>
       </div>
-      <div className="px-36 pt-8 flex justify-end gap-5">
+      <div className="text-center pt-8">
         <div className="dropdown">
           <label tabIndex={0} className="btn bg-slate-100 hover:bg-slate-600 text-black m-1">
             Filter By
